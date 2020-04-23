@@ -1,5 +1,5 @@
 import React from 'react';
-import REACTDOm from 'react-dom';
+import REACTDOM from 'react-dom';
 import App from './App';
 
 it('renders withour crashing', () => {
