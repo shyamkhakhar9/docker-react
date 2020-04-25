@@ -1,10 +1,8 @@
 FROM node:alpine
 
-RUN apk update -qq && apk add --update nodejs nodejs-npm
+CMD docker system prune
 
 WORKDIR /app/frontend
-
-COPY ./yarn.lock /app/frontend/yarn.lock
 
 
 COPY ./package.json ./
