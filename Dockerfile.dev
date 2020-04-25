@@ -1,7 +1,5 @@
 FROM node:alpine
 
-CMD docker system prune
-
 WORKDIR /app/frontend
 
 
