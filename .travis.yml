@@ -3,6 +3,8 @@ sudo: required
 services:
   - docker
 
+install:
+  - bundle install
 
 before_install:
   - docker build -t shyam/docker-react -f Dockerfile.dev .
