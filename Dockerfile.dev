@@ -2,8 +2,6 @@ FROM node:alpine
 
 WORKDIR /app/frontend
 
-COPY Gemfile Gemfile
-
 COPY ./package.json ./
 
 RUN npm install
