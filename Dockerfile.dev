@@ -4,6 +4,9 @@ RUN apk update -qq && apk add --update nodejs nodejs-npm
 
 WORKDIR /app/frontend
 
+COPY ./Gemfile /app/frontend/Gemfile
+COPY ./Gemfile.lock /app/frontend/Gemfile.lock
+
 
 COPY ./package.json ./
 
