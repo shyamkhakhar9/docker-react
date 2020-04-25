@@ -8,3 +8,7 @@ services:
 
 before_install:
   - docker build -t shyam/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run shyam/docker-react npm run test -- --coverage
+
