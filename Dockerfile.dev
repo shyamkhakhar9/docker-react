@@ -1,6 +1,6 @@
 FROM node:alpine
 
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs && apt-get install npm
+RUN apk update -qq && apk install -y build-essential libpq-dev nodejs && apk install npm
 
 WORKDIR /app/frontend
 
