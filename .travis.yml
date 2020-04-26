@@ -1,6 +1,4 @@
-language: node_js
-node_js:
-  - "stable"
+language: generic
 sudo: required
 
 services:
@@ -17,9 +15,9 @@ deploy:
   region: "ap-south-1"
   app: "Docker"
   env: "Docker-env"
-  bucker_name: "elasticbeanstalk-ap-south-1-195597906524"
+  bucket_name: "elasticbeanstalk-ap-south-1-195597906524"
   bucket_path: "Docker"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
-  secret_acces_key: "$AWS_SECRET_KEY"
+  secret_access_key: $AWS_SECRET_KEY
