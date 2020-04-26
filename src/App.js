@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dhruv Khakhar
+          Shyam Khakhar just changed me
         </a>
       </header>
     </div>
