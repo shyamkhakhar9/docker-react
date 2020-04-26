@@ -1,11 +1,11 @@
-language: node_js
-node_js:
-  - "stable"
+language: generic
 sudo: required
 
 services:
   - docker
 
 before_install:
-  - docker build -t shyam/docker-react -f Dockerfile.dev .
+  - docker build -t stephengrider/docker-react -f Dockerfile.dev .
 
+script:
+  - docker run -e CI=true stephengrider/docker-react npm run test
